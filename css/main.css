@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: rgb(25, 30, 80);
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    background-color: var(--main-color);
+    height: 66px;
+    display: flex;
+    box-shadow: 2px 2px 5px rgb(195, 191, 191);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+#header #logo img{
+    height: 66px;
+    width: 100px;
+    border-radius: 2px;
+    padding: 0 20px;
+    display: block;
+}
+#header #menu{
+    width: 100%;
+}
+#header #menu .main_menu{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    line-height: 66px;
+}
+.main_menu li{
+}
+.main_menu>li>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 18px 20px;
+    border-radius: 2px;
+}
+.main_menu>li:hover>a{
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.6s;
+}
+.main_menu .sub_menu_1{
+    width: 200px;
+    color: rgb(248, 240, 240);
+    background-color: var(--main-color);
+    position: absolute;
+    top: 66px;
+    list-style: none;
+    box-shadow: 2px 2px 5px black;
+    border-top: solid 1px wheat;
+    display: none;
+    line-height: 46px;
+}
+.main_menu #intro:hover .sub_menu_1{
+    display: block;
+    transition: all 2s;
+}
+.main_menu #service:hover .sub_menu_1{
+    display: block;
+    transition: all 2s;
+}
+.main_menu .sub_menu_1 li{
+    width: 200px;
+}
+.main_menu .sub_menu_1 li a{
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.main_menu .sub_menu_1 li:hover{
+    background-color: rgb(223, 228, 232);
+    border-left: solid 3px red;
+}
+.main_menu .sub_menu_1 li:hover a{
+    color: var(--main-color);
+    margin-left: 40px;
+    transition: all 0.6s;
+}
+
+#header #search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+#search input{
+    height: 25px;
+}
+#search #search_icon{
+   height: 25px;
+   padding: 0 10px;
+   position: relative;
+   right: 35px;
+}
+#content{
+    
+}
+#content #container{
+    margin-top: 66px;
+    height: 550px;
+    width: 100%;
+    background-image:url(/assets/img/qo-2_1695307682.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
