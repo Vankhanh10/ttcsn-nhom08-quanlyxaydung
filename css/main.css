@@ -18,6 +18,7 @@ html{
     position: fixed;
     width: 100%;
     top:0;
+    z-index: 1;
 }
 #header #logo img{
     height: 66px;
@@ -62,10 +63,6 @@ html{
     display: none;
     line-height: 46px;
 }
-.main_menu #intro:hover .sub_menu_1{
-    display: block;
-    transition: all 2s;
-}
 .main_menu #service:hover .sub_menu_1{
     display: block;
     transition: all 2s;
@@ -106,13 +103,34 @@ html{
    right: 35px;
 }
 #content{
-    
-}
-#content #container{
-    margin-top: 66px;
-    height: 550px;
+    position: absolute;
+    top: 80px;
     width: 100%;
-    background-image:url(/assets/img/qo-2_1695307682.jpg);
-    background-repeat: no-repeat;
-    background-size:cover ;
+    height: max-content;
+}
+#content #project{
+    display: flex;
+    justify-content: space-around;
+}
+#project .avatar{
+    width: 60%;
+}
+#project .avatar img{
+    display: block;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgb(91, 42, 42) ;
+}
+#project .infor{
+    margin-left: 15px;
+}
+#project .infor ul{
+    list-style: none;
+}
+.infor ul li p{
+    font-size: large;
+    margin: 20px 10px;
+    font-style: italic;
+}
+#content #operate{
+    height: 700px;
 }
