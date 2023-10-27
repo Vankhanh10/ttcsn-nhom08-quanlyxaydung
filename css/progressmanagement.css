@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 header {
@@ -41,4 +42,41 @@ footer {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+.bar {
+    stroke: none;
+}
+
+.completed-on-time {
+    fill: lightgreen;
+}
+
+.completed-overdue {
+    fill: lightgray;
+}
+
+.incomplete-on-time {
+    fill: orange;
+}
+
+.incomplete-overdue {
+    fill: red;
+}
+
+.in-progress {
+    fill: lightblue;
+}
+
+.bar-text {
+    fill: black;
+    font-size: 10px;
+    text-anchor: middle;
+}
+
+.axis-x text {
+    font-size: 8px;
+}
+
+.axis-y text {
+    font-size: 10px;
 }
